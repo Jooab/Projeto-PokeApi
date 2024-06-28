@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Search for a Pokemon !</title>
+</head>
+
+<body>
+    <main class="container">
+        
+        <img src="src/imagens/seta.png" alt="Seta Esquerda" class="left-arrow arrow" id="left-arrow">
+
+        <div class="card" id="card">
+            <form class="search-bar" id="search-bar">
+                <input type="text" class="input-search" id="input-search" placeholder="Search for a Pokemon" required>
+                <button class="search-button" id="search-button">
+                    <img src="src/imagens/lupa.png" alt="Botão">
+                </button>
+            </form>
+
+            <div class="pokemon-info" id="pokemon-info">
+                <img src="" alt="Pokemon" class="pokemon-image" id="pokemon-image">
+                <div class="pokemon-name-and-type">
+                    <p class="pokemon-name" id="pokemon-name"></p>
+                    <p class="pokemon-type" id="pokemon-type"></p>
+                </div>
+            </div>
+
+            <div class="pokemon-moves" id="pokemon-moves">
+                <ul class="pokemon-moves-list" id="pokemon-moves-list">
+                </ul>
+            </div>
+        </div>
+
+        <img src="src/imagens/seta.png" alt="Seta Direita" class="right-arrow arrow" id="right-arrow">
+    </main>
+
+    <script type="module" src="src/js/index.js"></script>
+</body>
+
+</html>
