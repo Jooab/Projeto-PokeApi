@@ -92,13 +92,18 @@ body {
     padding: 15px;
 }
 
-.pokemon-info .pokemon-name {
-    font-size: 35px;
+.pokemon-info {
+    font-size: 25px;
+}
+
+.pokemon-name {
+    font-size: 30px;
 }
 
 .pokemon-info .pokemon-type {
     font-size: 25px;
     border-radius: 20px;
+    padding: 5px;
 }
 
 .pokemon-info .pokemon-name::first-letter, .pokemon-type::first-letter{
@@ -122,7 +127,7 @@ body {
 }
 
 .pokemon-moves h2 {
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
 .pokemon-moves .pokemon-moves-list {
@@ -138,8 +143,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
     text-align: center;
@@ -147,11 +152,18 @@ body {
     border-radius: 25px;
 }
 
+.pokemon-moves .pokemon-moves-list li:hover {
+    background-color: #0051e3;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
 @media (max-width:500px){
    
 
     .pokemon-info .pokemon-image{
-        width: 90%;
+        width: 70%;
     }
 
     .container .arrow{

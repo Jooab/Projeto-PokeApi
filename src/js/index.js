@@ -1,4 +1,3 @@
-
 import { renderPokemon } from "./screen.js"
 const input = document.getElementById('input-search')
 const searchBar = document.getElementById('search-bar')

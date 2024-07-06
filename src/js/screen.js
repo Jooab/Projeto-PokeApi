@@ -1,7 +1,6 @@
 const pokemonImage = document.getElementById('pokemon-image')
 const pokemonName = document.getElementById('pokemon-name')
 const pokemonType = document.getElementById('pokemon-type')
-const movesList = document.getElementById('pokemon-moves-list')
 const pokemonMoves = document.getElementById('pokemon-moves')
 const input = document.getElementById('input-search')
 
@@ -88,11 +87,7 @@ export async function renderPokemon(pokemon) {
             case 'steel':
                 pokemonType.style.backgroundColor = "#60a1b8"
                 break
-        }
-
-        while (movesList.firstChild) {
-            movesList.removeChild(movesList.firstChild);
-        }
+        }  
 
         let fourMoves = data.moves.slice(0, 4)
         pokemonMoves.innerHTML = ` <h2>Moves</h2 >
